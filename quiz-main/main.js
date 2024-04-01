@@ -24,15 +24,15 @@ quizBtn[2].addEventListener(`click`, () => {
 });
 
 otherProjects[0].addEventListener(`click`, () => {
-    window.location = `/calculator.html`;
+    window.location = `https://github.com/dipishBisht/mini_projects`;
 });
 
 otherProjects[1].addEventListener(`click`, () => {
-    window.location = `/RockPaperScissors.html`;
+    window.location = `https://github.com/dipishBisht/mini_projects`;
 });
 
 otherProjects[2].addEventListener(`click`, () => {
-    window.location = `/todo-list.html`;
+    window.location = `https://github.com/dipishBisht/mini_projects`;
 });
 
 let theme = "Dark";
