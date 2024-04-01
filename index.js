@@ -74,7 +74,7 @@ createBtn.addEventListener("click", (e) => {
             localStorage.setItem("password", allPassword);
 
             alert('Account Created Sucessfully')
-            window.location = "/Js Projects/quiz-app/quiz-main/main-interface.html"
+            window.location = "/quiz-main/main-interface.html"
             // Clear input fields
             userName.value = "";
             passwordBox.value = "";
@@ -94,7 +94,7 @@ loginBtn.addEventListener("click", (e) => {
             a = logUsername.value;
             alert(`Welcome Back ${a}`);
             localStorage.setItem("currentUser",a);
-            window.location = "/Js Projects/quiz-app/quiz-main/main-interface.html"
+            window.location = "/quiz-main/main-interface.html"
         } else {
             alert("Enter Correct Details");
         }

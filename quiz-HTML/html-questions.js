@@ -94,5 +94,5 @@ function clicked() {
 displayQuestion();
 
 popMsgBtn.addEventListener("click", () => {
-    window.location = `/Js Projects/quiz-app/quiz-main/main-interface.html`
+    window.location = `/quiz-main/main-interface.html`
 })
