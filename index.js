@@ -34,8 +34,7 @@ interBtn.forEach((value) => {
 });
 
 startedBackBtn.addEventListener("click", () => {
-    // getStarted.style.left = "150%";
-    window.location = "/quiz-main/main-interface.html";
+    getStarted.style.left = "150%";
 });
 
 loginBackBtn.addEventListener("click", () => {
@@ -43,7 +42,9 @@ loginBackBtn.addEventListener("click", () => {
 });
 
 function startedComing() {
-    getStarted.style.left = "50%";
+    // getStarted.style.left = "50%";
+    window.location = "./quiz-main/main-interface.html";
+
 };
 
 function loginComing() {
