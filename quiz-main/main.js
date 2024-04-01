@@ -12,15 +12,15 @@ const checkbox = document.getElementById("checkbox")
 const signOut=document.querySelector(".side-panel a");
 
 quizBtn[0].addEventListener(`click`, () => {
-    window.location = `html-questions.html`;
+    window.location = `/Js Projects/quiz-app/quiz-HTML/html-questions.html`;
 });
 
 quizBtn[1].addEventListener(`click`, () => {
-    window.location = `css-questions.html`;
+    window.location = `/Js Projects/quiz-app/quiz-CSS/css-questions.html`;
 });
 
 quizBtn[2].addEventListener(`click`, () => {
-    window.location = `js-questions.html`;;
+    window.location = `/Js Projects/quiz-app/quiz-JS/js-questions.html`;
 });
 
 otherProjects[0].addEventListener(`click`, () => {
@@ -70,5 +70,5 @@ closePanel.addEventListener("click", () => {
 
 signOut.addEventListener("click",()=>{
     alert('Signed Out Succesfully')
-    window.location="quiz.html";
+    window.location="/Js Projects/quiz-app/quiz.html";
 })
