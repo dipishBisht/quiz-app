@@ -34,7 +34,8 @@ interBtn.forEach((value) => {
 });
 
 startedBackBtn.addEventListener("click", () => {
-    getStarted.style.left = "150%";
+    // getStarted.style.left = "150%";
+    window.location = "/quiz-main/main-interface.html";
 });
 
 loginBackBtn.addEventListener("click", () => {
@@ -58,49 +59,49 @@ let subPass = (localStorage.getItem("password")).split(',')
 allUsername = subUser.flat(Infinity);
 allPassword = subPass.flat(Infinity);
 
-createBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (userName.value !== "" && passwordBox.value !== "") {
-        if (allUsername.includes(userName.value)) {
-            alert("Username Already Exists");
-        } else {
-            a = userName.value;
-            let b = passwordBox.value;
-            allUsername.push(a);
-            allPassword.push(b);
-            ua=a;
-            // Save user to localStorage
-            localStorage.setItem("username", allUsername);
-            localStorage.setItem("password", allPassword);
+// createBtn.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (userName.value !== "" && passwordBox.value !== "") {
+//         if (allUsername.includes(userName.value)) {
+//             alert("Username Already Exists");
+//         } else {
+//             a = userName.value;
+//             let b = passwordBox.value;  
+//             allUsername.push(a);
+//             allPassword.push(b);
+//             ua=a;
+//             // Save user to localStorage
+//             localStorage.setItem("username", allUsername);
+//             localStorage.setItem("password", allPassword);
 
-            alert('Account Created Sucessfully')
-            window.location = "/quiz-main/main-interface.html"
-            // Clear input fields
-            userName.value = "";
-            passwordBox.value = "";
-        }
-    } else
-        alert("Enter Your Details")
-});
+//             alert('Account Created Sucessfully')
+//             window.location = "/quiz-main/main-interface.html"
+//             // Clear input fields
+//             userName.value = "";
+//             passwordBox.value = "";
+//         }
+//     } else
+//         alert("Enter Your Details")
+// });
 
 
-//* Login Interface Code
+// //* Login Interface Code
 
-loginBtn.addEventListener("click", (e) => {
-    e.preventDefault();
+// loginBtn.addEventListener("click", (e) => {
+//     e.preventDefault();
 
-    if (logUsername.value != "" && logPassword.value !== "") {
-        if (allUsername.includes(logUsername.value) && allPassword.includes(logPassword.value) && allUsername.indexOf(logUsername.value) === allPassword.indexOf(logPassword.value)) {
-            a = logUsername.value;
-            alert(`Welcome Back ${a}`);
-            localStorage.setItem("currentUser",a);
-            window.location = "/quiz-main/main-interface.html"
-        } else {
-            alert("Enter Correct Details");
-        }
-    } else
-        alert('Enter Username');
-});
+//     if (logUsername.value != "" && logPassword.value !== "") {
+//         if (allUsername.includes(logUsername.value) && allPassword.includes(logPassword.value) && allUsername.indexOf(logUsername.value) === allPassword.indexOf(logPassword.value)) {
+//             a = logUsername.value;
+//             alert(`Welcome Back ${a}`);
+//             localStorage.setItem("currentUser",a);
+//             window.location = "/quiz-main/main-interface.html"
+//         } else {
+//             alert("Enter Correct Details");
+//         }
+//     } else
+//         alert('Enter Username');
+// });
 document.addEventListener('contextmenu', event => event.preventDefault());
 //     if (event.ctrlKey && event.shiftKey && event.key === 'J') {
 
