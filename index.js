@@ -1,7 +1,6 @@
 //* quiz interface
 
 const interBtn = document.querySelector("#started-btn");
-const getStarted = document.querySelector(".get-started-interface");
 
 //# quiz interface code
 
