@@ -81,11 +81,11 @@ function displayQuestion() {
     queNo.innerText = currentQueNo + 1;
     question.innerText = data[currentQueNo].que;
     optionsli.forEach((value, index) => {
-        value.removeEventListener(`click`, clicked);
-        value.addEventListener(`click`, clicked);
+        value.removeEventListener(`click`, clicked); //* removing previour event 
+        value.addEventListener(`click`, clicked);  //* adding new event
         optionsp[index].innerText = data[currentQueNo].options[index];
     });
-}
+}   
 
 function clicked() {
     check(this);
